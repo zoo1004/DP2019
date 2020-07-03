@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="utf=8" />
+        <!--external 외부에서 불러오기-->
+        <link rel="stylesheet" type="text/css" href="default.css" />
+        <style>
+            #embeded_target{
+                color: green;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="external_target"> 익스터널 방식 </div>
+        <div id="embeded_target"> 엠비디드 방식</div>
+        <div style="color: blue;"> 인라인 방식 </div>
+        <div style="color: blue;"> 인라인 방식2 </div> 
+
+        <style>
+        /* 전체 선택자 */
+        *{
+           
+        }
+        /* 요소(dlement) 선택자 */
+         b{ color:red; }
+        /* 클래스(class) 선택자, 마침표(.) */
+        .c_name{ color: blue; }
+        /* 아이디(id) 선택자, 샵기호(#) */
+        #i_name{ color:violet; }
+
+        </style>
+        전체 선택자
+        <b>볼드체</b>
+        <div class="c_name">클래스 선택자</div>
+        <div id="i_name">아이디 선택자</div>
+
+
+
+        <style>
+            /* 가상 요소 선택자 */
+            #virtual_target:before{
+                content:"*";
+            }
+            #virtual_target:after{
+                content:"*";
+            }
+            #virtual_target::first-letter{
+                font-size: 150px;
+            }
+            #virtual_target:first-line{
+                color: pink;
+            }
+        </style>
+        <div id="virtual_target">
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+        </div>
+
+        <style>
+            .virtual_calss:first-child{ color: purple; }
+            .virtual_calss:last-child{ color: red; }
+            .virtual_calss:nth-child(3){ color: blue; }
+            /* 1st, 2st, 3rd, 4th, 5th .... n번째(th) */
+            /* :link, :visited, :hover, :active, :focus */
+            a:link{ color:yellow; } /*기본 모습*/
+            a:visited{ color: violet; } /* 방문 후 */
+            a:hover{ color: green; } /*마우스 올림*/
+            a:active{color: pink; } /*활성화*/
+            a:focus{color: red; } /* 집중 */
+        </style> 
+        <div> <!-- 부모 parent-->
+            <div class="virtual_calss">   <!-- 자식 child -->
+               가상 클래스 선택자
+           </div>
+           <div class="virtual_calss">가상 클래스 선택자</div>
+           <div class="virtual_calss">가상 클래스 선택자</div>
+           <div class="virtual_calss">가상 클래스 선택자</div>
+        </div>
+        <a href="#">링크 버튼</a>
+        
+    
+    <style> 
+        /* 하위선택자 띄어쓰기( )*/
+        div li{ color: green; }
+        /* 자식 선택자 부등호(>) */
+        div>ul>li{text-decoration: underline; }
+        /* 선택자 조합 - 쉽표(,)  */
+        div,ul,li{font-weight: bold; }
+    </style>
+        <div> 
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+        </ul>
+    </div>
+        
+      
+    </body>
+</html>
