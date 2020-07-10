@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>일상에 예술 더하기, Prame</title>
+	<link rel="shortcut icon" type="image⁄x-icon" href="./images/weblogo.png">
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<link rel="stylesheet" type="text/css" href="css/style4.css">
+	<link rel="stylesheet" type="text/css" href="css/style5.css">
+	<style>
+		h1{
+			width: 100%;
+			font-size: 20px;
+			font-family: arial,helvetica;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		#section0 {
+			text-align: left;
+			padding-left: 12%;
+			line-height: 1;
+		}
+		/*section1*/
+		#section1 {
+			text-align: left;
+		}
+		#p_overview {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			margin-left: 11%;
+			padding-top: 7%;
+		}
+		.overview {
+			color: #fff;
+			float: left;
+			margin-top: 5%;
+			margin-left: 5%;
+			margin-top: 15%;
+			margin-bottom: 20%;
+			width: 100%;
+		}
+		.overview > p {
+			padding-top: 2%;
+			font-weight: 300;
+			width: 47%;
+			height: 105px;
+			float: left;
+			font-size: 15px;
+			text-align: left;
+			letter-spacing: 0.5px;
+			line-height: 1.7;
+		}
+		.overview > img {
+			float: left;
+			width: 30%;
+			margin-left: 6%;
+			margin-right: 5%;
+			vertical-align: top;
+		}
+		/*section2*/
+		/*section3*/
+		#section3 {
+			text-align: left;
+		}
+		#p_main {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			margin-left: 12%;
+			padding-bottom: 5%;
+		}
+		.mainservice {
+			margin-left: 10%;
+			width: 100%;
+			text-align: center;
+		}
+		#sub {
+			float: left;
+			width: 40%;
+		}
+		#sub:hover{
+			color: white;
+			transition: all 0.2s;
+			-ms-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		.sub_icon {
+			margin-bottom: 20px;
+		}
+		.sub_tit{
+			font-size: 25px;
+			color: white;
+			margin-bottom: 20px;
+		}
+		.sub_txt{
+			font-size: 15px;
+			color: white;
+			margin-bottom: 10%;
+			line-height: 1.5;
+			font-weight: 300;
+		}
+		#fun {
+			float: left;
+			width: 40%;
+
+		}
+		.fun_icon {
+			margin-bottom: 20px;
+		}
+		.fun_tit {
+			font-size: 25px;
+			color: white;
+			margin-bottom: 20px;
+		}
+		.fun_txt {
+			font-size: 15px;
+			color: white;
+			margin-bottom: 10%;
+			line-height: 1.5;
+			font-weight: 300;
+		}
+		#fun:hover{
+			color: white;
+			transition: all 0.2s;
+			-ms-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		/*section4*/
+		#section4 {
+			text-align: left;
+		}
+		#p_sub {
+			color: #333;
+			font-size: 20px;
+			font-weight: 300;
+			margin-left: 12%;
+			margin-top: 2%;
+			padding-bottom: 9%;
+		}
+		/*section5*/
+		#section5 {
+			text-align: left;
+		}
+		#p_sub2 {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			margin-left: 12%;
+			padding-bottom: 7%;
+		}
+		.subscribe2 {
+			width: 45%;
+			margin-left: 12%;
+		}
+		.sub2_tit {
+			color: #fff;
+			font-weight: 400;
+			font-size: 55px;
+		}
+		.sub2_tit2 {
+			color: #fff;
+			font-weight: 300;
+			font-size: 55px;
+		}
+		.sub2_tit3 {
+			color: #fff;
+			font-weight: 300;
+			font-size: 55px;
+			margin-bottom: 20px;
+		}
+		.de_small2 {
+			font-size: 15px;
+			color: #fff;
+			line-height: 1.7;
+			font-weight: 300;
+			margin-bottom: 5%;
+		}
+		/*section6*/
+		#p_fun {
+			color: white;
+			font-size: 20px;
+			font-weight: 300;
+			margin-bottom: 2%;
+		}
+		#section6 {
+			text-align: left;
+		}
+		#p_fun_de {
+			font-size: 15px;
+			color: #fff;
+			line-height: 1.7;
+			font-weight: 300;
+		}
+		/*section7*/
+		#p_fun2 {
+			color: #DD2476;
+			font-size: 20px;
+			font-weight: 300;
+			margin-bottom: 2%;
+			margin-left: 12%;
+			margin-top: 5.5%;
+		}
+		#section7 {
+			text-align: left;
+		}
+		
+		#section0, #section1, #section2, #section3, #section4, #section5,
+		#section6, #section7, #section8, #section9, #section10, #section11
+		#section12, #section13, #section14, #section15,
+		#slide1, #slide2{
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#section0{
+			background-position: center;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('images/wallpaper3.jpg');
+		}
+		#section0 h1{
+			transform: translateY(-50%);
+			position: relative;
+		}
+		.txt2{
+			color: #DD2476;
+		}
+		#section1{
+			background: linear-gradient(45deg, #FF512F, #DD2476);
+		}
+		#section2{
+			background-color: #f7f7f7;
+		}
+		#section3{
+			background: linear-gradient(45deg, #dd2475, #ff512f);
+		}
+		#section4{
+			background-color: #fff;
+		}
+		#section5{
+			background-color: #DD2476;
+		}
+		#section6{
+			background-color: #333;
+		}
+		#section7{
+			background-color: #f7f7f7;
+			width:100%; 
+			height:100%;
+		}
+		#section8 {
+			background-color: #fff;
+		}
+		#section1, #section3, #section12 {
+			width: 100%;
+			height: 100vh;
+			background: linear-gradient(-70deg, #FF512F, #dd2476, #FF512F);
+			background-size: 400% 400%;
+			animation: gradientBG 15s ease infinite;
+		}
+
+		@keyframes gradientBG {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		#section9{
+			background-color: #f7f7f7;
+		}
+		#section10{
+			background-color: #DD2476;
+		}
+		#section11{
+			background-color: #fff;
+			float: left;
+		}
+		#container {
+			width:100%; 
+			height:100%;
+		}
+
+		/*slide*/
+		#slide1{
+			background-color: none;
+		}
+		#slide2{
+			background-color: none;
+		}
+		#slide3{
+			background-color: none;
+		}
+		#slide4{
+			background-color: none;
+		}
+		#slide5{
+			background-color: none;
+		}
+		#slide6{
+			background-color: none;
+		}
+		#slide7{
+			background-color: none;
+		}
+		#slide8{
+			background-color: none;
+		}
+		#slide9{
+			background-color: none;
+		}
+		#slide10{
+			background-color: none;
+		}
+		.cursor {
+			position: absolute;
+			width: 48px;
+			height: 48px;
+			top: 50%;
+			left: 50%;
+			margin: -24px 0 0 -24px;
+			border: 3px solid #f80759;
+			border-radius: 100px;
+			backface-visibility: hidden;
+			transition: transform 0.3s ease-out;
+		}
+		.cursor.is-moving {
+			transform: scale(0.7);
+		}	
+		.monitorsize {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 15px;
+			font-size: 10px;
+			color: #333;
+			font-weight: 300;
+			right:0;
+			margin-right: 2%;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage"></a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage"></a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage"></a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<!--MAIN PAGE-->
+			<div class="block-reveal" style="--reveal-speed: 0.75;">
+				<p style="--delay: 1.0; --color: #FF512F; width: 200px; margin-left: 15px; margin-bottom: 15px; font-weight: 300; font-size: 35px;" class=tit>일상에</p>
+				<p style="--delay: 1.1; --color: #DD2476; width: 200px; margin-left: 15px; margin-bottom: 15px; font-weight: 300; font-size: 35px;" class=txt>예술 더하기,</p>
+				<p style="--delay: 1.0; --color: #FF512F; width: 200px; margin-left: 15px; margin-bottom: 25px; font-weight: 500; font-size: 35px;" class=txt2>Prame</p>
+			</div>
+			<a href="#" class="google">
+				<p><img src="./images/googleplay.png"  width="15" height="15">Google Play</p>
+			</a>
+            <a href="#" class="apple">
+				<p><img src="./images/apple.png" width="15" height="15">App Store</p>
+			</a>
+			<p class="monitorsize">본 사이트는 크롬(Chrome)과 화면해상도 1280 * 720 에 최적화 되어있습니다.</p>
+		</div>
+		<div class="section" id="section1">
+			<!--OVERVIEW PAGE-->
+			<div class="effect-wrap">
+				<div class="effect8" style="margin: 0;">
+					<figure class="front" style="margin: 0;">
+						<figcaption><img src="images/pramewhite3.png" style="vertical-align:middle; width: 300px; margin-top: 20%;"></figcaption>
+					</figure>
+					<figure class="back">
+						<figcaption style="margin: 0; padding: 0;">
+							<p id="p_overview">Over View</p>
+							<div class="overview">
+							<img src="images/icon.png" style="vertical-align:middle; width: 300px;">
+							<p style="width: 600px; font-size: 15px; margin-left: 10px;">
+								Prame은 그동안 어렵게만 생각했던 예술이라는 틀에서 벗어나<br/>
+								구독경제와 펀딩 서비스를 통하여 나의 일상 속에서 예술을 향유할 수 있는 서비스입니다.</p>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<!--VIDEO PAGE-->
+			<iframe width="1070" height="602" src="https://www.youtube.com/embed/BXCl_CJ8FFw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="section" id="section3">
+			<!--SERVICE PAGE-->
+			<p id="p_main">Main Service</p>
+			<div class="mainservice">
+				<a href="" id="sub">
+					<img src="images/subscribe_icon.png" class="sub_icon" width="230px">
+					<p class="sub_tit">구독 서비스</p>
+					<p class="sub_txt">자신에게 맞는 구독 플랜을 선택해<br/>
+						매월 정기구독을 통해 예술을 즐깁니다.</p>
+				</a>
+				<a href="" id="fun">
+					<img src="images/funding_icon.png" class="fun_icon" width="230px">
+					<p class="fun_tit">펀딩 서비스</p>
+					<p class="fun_txt">프레임만의 독창적인 서비스!<br/>
+						크라우드 펀딩 시스템으로 이윤 창출을!</p>
+				</a>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<!--SUBSCRIBE PAGE-->
+			<p id="p_sub">Subscribe</p>
+			<div id="sub_btn">
+				<ul class="subscribe">
+					<li>
+						<a href="">
+							<div class="screen">
+								<div class="basic">~ 개인 추천</div>
+								<img src="images/basic_btn.png" class="b-btn">
+							</div>
+						</a>
+					</li><br/>
+					<li>
+						<a href="">
+							<div class="screen">
+								<div class="standard">~ 자영업자</div>
+								<img src="images/standard_btn.png" class="s-btn">
+							</div>
+						</a>
+					</li><br/>
+					<li>
+						<a href="">
+							<div class="screen">
+								<div class="premium">~ 기업 추천</div>
+								<img src="images/premium_btn.png" class="p-btn">
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="sub_de">
+					<p class="sub_detit1">내 라이프 스타일에</p>
+					<p class="sub_detit2" style="display: inline-block;">맞는&#160;</p>
+					<p class="sub_detit3" style="display: inline-block;">세가지 플랜</p>
+					<p class="de_small">
+						Prame은 다양한 사용자를 생각하여 총 세가지 플랜으로 구성되어 있습니다.<br/>
+						나에게 맞는 구독 시스템을 선택해 예술을 즐길 수 있습니다.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="section" id="section5">
+			<!--SUBSCRIBE2 PAGE-->
+			<p id="p_sub2">Subscribe</p>
+			<div class="subscribe2">
+				<p class="sub2_tit" style="display: inline-block;">터치 한 번</p>
+				<p class="sub2_tit2" style="display: inline-block;">으로</p>
+				<p class="sub2_tit3">예술 작품이 내 방에</p>
+				<p class="de_small2">
+					Prame은 접근하기 쉬운 예술을 목표로 합니다.<br/>
+					자신에게 알맞는 구독 플랜을 선택 후, 터치 한 번으로<br/>
+					쉽게 예술을 향유할 수 있습니다.
+				</p>
+			</div>
+			<div class="">
+				<img class="touch_img1" src="images/touch1.png" width="400px">
+				<img class="touch_img2" src="images/touch2.png" width="400px">
+			</div>
+		</div>
+		<div class="section" id="section6">
+			<!--FUNDING PAGE-->
+			<div class="effect-wrap">
+				<figure class="effect7">
+					<img src="images/background3.jpg" max-width="100%" max-height="100%" margin="0">
+					<figcaption class="back">
+						<p id="p_fun">Funding</p>
+						<div id="circle_section">
+							<div id="circle1">
+								<p>Prame</p>
+							</div>
+							<div id="plus">
+								<p>&#43;</p>
+							</div>
+							<div id="circle2">
+								<p>Funding</p>
+							</div>
+							<div id="arrow">
+								<p>&#8594;</p>
+							</div>
+							<div id="circle3">
+								<p class="cir_u">Punding</p>
+							</div>
+						</div>
+						<p id="p_fun_de">구독과 동시에 투자의 경험을 제공하는 특별한 펀딩 시스템을 통해 청년 작가와 사용자 모두 이득을 얻을 수 있습니다.</p>
+					</figcaption>
+				</figure>
+			</div>       
+		</div>
+		<div class="section" id="section7">
+			<!--FUNDING2 PAGE-->
+			<p id="p_fun2">Funding+</p>
+			<div id="fun_section">
+				<p class="fun_tit1" style="display: inline-block;">모두가&#160;</p>
+				<p class="fun_tit2" style="display: inline-block;">플러스</p>
+				<p class="fun_tit1" style="display: inline-block;">니까</p>
+				<p class="fun_de">
+					사용자가 작가의 작품을 렌탈할 때 마다 일정금액을 작가의 전시에<br/>
+					투자해 전시가 성공적으로 개최되면 투자된 이윤금이 나에게로!
+				</p>
+			</div>
+			<div id="fun_section2">
+				<video style="width: 320px; bottom: 0; border-radius: 35px 35px 0 0; box-shadow: -10px 10px 30px 10px #D9D9D9;" muted autoplay loop>
+					<source src="videos/funding.mp4">
+				</video>
+			</div>
+		</div>
+		<div class="section" id="section8">
+			<!--CIRCURATION PAGE-->
+			<div class="cir_loop">
+				<div id="cir_section">
+					<p class="cir_tit">새로운 체계의</p>
+					<p class="cir_tit2">선순환식 유통방식</p>
+					<p class="cir_de">
+						프레임은 크라우드 펀딩 시스템 서비스와 결합하여 작가의 전시를</br>
+						개최하고 구독자는 전시 수익에 따라 이윤을 창출할 수 있습니다.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section9">
+			<!--POLICY PAGE-->
+			<div class="fun_section2">
+				<p class="fun2_tit" style="display: inline-block;">Prame</p>
+				<p class="fun2_tit2" style="display: inline-block;">은</p>
+				<p class="fun2_tit2">이렇게 운영됩니다.</p>
+				<p class="fun2_de">
+					Prame의 구독료는 사용자와 창작가의<br/>
+					최대 이윤을 위해 공정하게 배분하여 운영됩니다.
+				</p>
+			</div>
+			<div class="fun_section3">
+				<!-- <ul class="progress_section">
+					<li>
+						<p>작가에게 직접 전달되는 수익 <em>65%</em></p>
+						<div class="progress1">
+							<div class="progress-value1"></div>
+						</div><br/>
+					</li>
+					<li>
+						<p>배송비 및 플랫폼 이용 수수료 <em>20%</em></p>
+						<div class="progress2">
+							<div class="progress-value2"></div>
+						</div><br/>
+					</li>
+					<li>
+						<p>포인트로 변환되는 자동 펀딩 <em>15%</em></p>
+						<div class="progress3">
+							<div class="progress-value3"></div>
+						</div>
+					</li>
+				</ul>-->
+				<video muted autoplay class="progress_vid">
+					<source src="videos/progress.mp4" stye="width: 33%; float: left;">
+				</video>
+			</div>
+		</div>
+		<div class="section" id="section10">
+			<!--DESIGN1 PAGE-->
+			<p id="p_app">App Design</p>
+			<p id="p_app2">화살표를 클릭해보세요!</p>
+			<div id="slide_section">
+				<div class="slide" id="slide1">
+					<h1><img src="images/screen1.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide2">
+					<h1><img src="images/screen2.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide3">
+					<h1><img src="images/screen3.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide4">
+					<h1><img src="images/screen4.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide5">
+					<h1><img src="images/screen5.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide6">
+					<h1><img src="images/screen6.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide7">
+					<h1><img src="images/screen7.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide8">
+					<h1><img src="images/screen8.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide9">
+					<h1><img src="images/screen9.png" width="220px"></h1>
+				</div>
+				<div class="slide" id="slide10">
+					<h1><img src="images/screen10.png" width="220px"></h1>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section11">
+			<!--DESIGN2 PAGE-->
+			<div id="end_section"></div>
+		</div>
+		<div class="section" id="section12">
+			<!--FOOTER-->
+			<div id="footer1">
+				<img class="footer_img" src="images/pramewhite.png" width="350px">
+				<p class="copyright">Copyright &#169; 2020. Prame All rights reserved.</p>
+			</div>
+			<div id="footer2">
+				<li class="name_shin">
+					<h3>Shin Hyeon Sung</h3>
+					<p>Designer</p>
+					<p class="email">sh5324hh@gmail.com</p>
+				</li>
+				<li class="name_lee">
+					<h3>Lee Seung Mi</h3>
+					<p>Designer</p>
+					<p class="email">badamulbum88@naver.com</p>
+				</li>
+				<li class="name_won">
+					<h3>Won Hee Yun</h3>
+					<p>Programmar</p>
+					<p class="email">hyu528@gmail.com</p>
+				</li>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage', '10thPage', '11thPage', '12thPage', '13thPage',],
+			navigation:true,
+			navigationTooltips: ['Main', 'Over View', 'Video', 'Service', 'Subscribe', 'Rental', 'Funding', 'Funding+', 'Circulation', 'Policy', 'App DesignⅠ', 'App DesignⅡ', 'Contact'],
+			showActiveTooltip: true,
+			menu: '#menu'
+		});
+	</script>
+</body>
+</html>

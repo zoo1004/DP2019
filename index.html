@@ -1,209 +1,39 @@
-﻿<!DOCTYPE html>
-<html>
-<head> 
+<!DOCTYPE html><!-- 21961022 김윤주 -->
+<html> 
 <meta charset="utf-8">
-<title>Apple</title>
-<link rel="stylesheet" type="text/css" href="13css/common.css">
-<link rel="stylesheet" type="text/css" href="13css/main.css">
+<title>KIMYOONJU_ST</title>
+<head>
+<style>
+
+
+header {z-index: 9999; position:fixed; width:100vw; min-width: 100px;height: 80px;}
+header > h1 > a {float: left; margin: 20px 0 0 60px; font-size: 30px; color:#000000 ; line-height: 40px; text-decoration:none; color:rgb(80, 80, 80); }
+header > h1 > a:hover {color:#cccccc;}
+
+header > nav > ul{float: right; padding-right: 60px; margin-top: 30px;}
+header > nav > ul > li{display:inline; margin-right:30px;}
+header > nav > ul > li > a{font-size: 18px; font-weight: 700; text-decoration:none; color:rgb(80, 80, 80); }
+header > nav > ul > li > a:hover {color:#cccccc;}
+
+
+
+</style>
 </head>
 <body>
-<header>
-  <section id="top">
-    <a id="logo" href="index.html"><img src="13img/logo.png"></a>
-    <div id="search"> 
-      <div id="search_title">SEARCH</div>
-      <div id="search_form"><input type="text"></div>
-      <div id="search_button"><img src="13img/btn_search.png"></div>
-    </div>
-    <nav id="top_menu">
-      <ul>
-        <li class="green"><a href="#">로그인</a></li>
-        <li class="green"><a href="#">회원가입</a></li>
-        <li><a href="#">마이페이지</a></li>
-        <li><a href="#">이용안내</a></li>
-        <li><a href="#">고객센터</a></li>
-      </ul>
-    </nav> <!-- top_menu -->
-    <div class="clear"></div>
-  </section> <!-- section top -->
-  <nav id="main_menu">
-    <ul>
-      <li><a href="detail.html">mac </a></li>
-      <li><a href="cart.html">iPad</a></li>
-      <li><a href="#">iPhone </a></li>
-      <li><a href="#">Watch</a></li>
-      <li><a href="#">Music </a></li>
-    </ul>
-  </nav>
-</header>
-<section id="main">
-  <section id="cat1">
-    <div id="cat_title">
-      CATEGORY ITEM
-    </div>
-    <ul>
-      <li>MacBook Air</li>
-      <li>MacBook Pro 13형</li>
-      <li>MacBook Pro 16형</li>
-      <li>iMac</li>
-      <li>iMac Pro</li>
-      <li>Mac Pro</li>
-      <li>Mac mini</li>
-      <li>비교하기</li>
-      <li>Pro Display XDR</li>
-      <li>악세서리</li>
-      <li>Catalina</li>
-    </ul>
-  </section> <!-- section cat1 -->
-  <section id="cat2">
-    <img src="13img/main_img.png">
-  </section> <!-- section cat2 -->
-  <section id="cat3">
-    <div id="latest_notice">
-      <ul>
-        <li> FaceTime으로 소통하기 </li>
-        <li> iPhone 및 Apple Watch 안전 기능 </li>
-        <li> 질문이 있으십니까? </li>
-        <li> 어떻게 도와 드릴까요? </li>
-        <li> Apple 전문가의 서비스 및 지원 </li>
-        <li> 수리 시작하기 </li>
-      </ul>
-    </div>
-    <div id="week_event">
-      <img src="13img/week_event_img.png">
-    </div>
-  </section> <!-- section cat3 -->
+    <header>
+        <h1><a href="./index.html">KIMYOONJU</a></h1>
+        <nav>
+          <ul>
+            <li><a href="./introduce.html">Introduce</a> </li>
+            <li><a href="./work.html">work</a> </li>
+            <li><a href="./contact.html">contact</a> </li>
+          </ul>
+        </nav>
+      </header>
+      <div>
+        <img src="2img/main.jpg" width="100%">
+      </div>
 
-  <div class="clear"></div>
 
-  <section id="special_shop">
-    <ul>
-      <li><img src="13img/special_img1.png"></li>
-      <li><img src="13img/special_img2.png"></li>
-    </ul>
-  </section> <!-- section special_shop -->
-  <section id="special_banner">
-    <div id="banner1">
-      <ul>
-        <li><img src="13img/landscape_img1.png"></li>
-        <li><img src="13img/landscape_img2.png"></li>
-      </ul>
-    </div>
-    <div id="banner2">
-      <ul>
-        <li><img src="13img/point_wallpaper_img1.png"></li>
-        <li><img src="13img/point_wallpaper_img2.png"></li>
-      </ul>
-    </div>
-    <div id="banner3">
-      <ul>
-        <li><img src="13img/children_img1.png"></li>
-        <li><img src="13img/children_img2.png"></li>
-      </ul>
-    </div>
-  </section> <!-- section special_banner -->
-
-  <div class="clear"></div>
-
-  <section id="new">
-    <h3><span>NEW ARRIVAL</span> 신규 상품 </h3>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_01.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_02.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_03.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_04.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="clear"></div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_05.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_06.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_07.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-    <div class="item">
-      <ul>
-        <li><img src="img/new_08.jpg"></li>
-        <li class="subject">맞춤제작(풍경)</li>
-        <li class="comment">원하는 사이즈로 제작 가능</li>
-        <li class="price">20,000원</li>
-      </ul>
-    </div>
-  </section> <!-- section new -->
-
-  <div class="clear"></div>
-
-</section> <!-- section main -->
-
-<footer>
-  <section id="footer_menu_box">
-    <nav id="footer_menu">
-      <ul>
-        <li><a href="#">회사소개</a></li>
-        <li><a href="#">이용안내</a></li>
-        <li><a href="#">장바구니</a></li>
-        <li><a href="#">주문조회</a></li>
-        <li><a href="#">적립금</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보보호정책</a></li>
-        <li><a href="#">고객센터</a></li>
-      </ul>
-    </nav>
-  </section> <!-- section footer_menu_box -->
-  <section id="footer_box">
-    <div id="footer_logo">
-      <img src="img/footer_logo.gif">
-    </div>
-    <div id="address">
-      <img src="img/address.gif">
-    </div>
-    <div id="footer_banner">
-      <img src="img/footer_banner_01.gif">
-    </div>
-  </section> <!-- section footer_box -->
-</footer>
 </body>
 </html>

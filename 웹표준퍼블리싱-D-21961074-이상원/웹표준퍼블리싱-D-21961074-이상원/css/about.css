@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+*{margin: 0; padding: 0;font-family: 'Noto Sans KR', sans-serif;}
+
+header {z-index: 9999; position:fixed; width:100vw; background-color: rgba(230, 230, 230, 0.438); min-width: 200px;height: 80px;}
+header > h1{float: left; margin: 20px 0 0 60px; font-size: 30px; color:#3372B1 ; line-height: 40px;}
+
+header > nav > ul{float: right; padding-right: 60px; margin-top: 30px;}
+header > nav > ul > li{display:inline; margin-right:30px;}
+header > nav > ul > li > a{font-size: 18px; font-weight: 700; text-decoration:none; color:rgb(80, 80, 80); }
+header > nav > ul > li > a:hover {color:#3372B1;}
+
+
+
+.main-area{height: 100vh; display: table;}
+.image-container {display: table-cell; vertical-align: middle; }
+
+.image-container > img{border-radius: 50%; margin-left: 200px; width: 50%;
+    -webkit-filter: grayscale(100%);-webkit-transition: .5s ease-in-out;-moz-filter: grayscale(100%); -moz-transition: .5s ease-in-out;-o-filter: grayscale(100%); -o-transition: .5s ease-in-out;}
+
+.image-container > img:hover{-webkit-filter: grayscale(0%);-webkit-transition: .5s ease-in-out;-moz-filter: grayscale(0%);-moz-transition: .5s ease-in-out;-o-filter: grayscale(0%);-o-transition: .5s ease-in-out;}
+.profile {display: table-cell; vertical-align: middle;}
+.profile ul{}
+.profile ul >h1{font-size: 40px;}
+.profile ul >li{font-size: 20px; list-style-type: none; margin-top: 20px;}
